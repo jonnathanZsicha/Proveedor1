@@ -15,7 +15,8 @@ import lombok.Data;
 	private String numeroCuenta;
 	private String tipoCuenta;
 	private Double monto;
-	@ManyToOne()
+	@ManyToOne
+	@JoinColumn(name="cuenta_id", nullable=false)
 	private Cuenta cuenta;
 
 }

@@ -18,8 +18,6 @@ public class Cuenta {
 	private int codigo;
 	private Double saldo;
 	private String tipoCuenta;
-	
-	
 	@ManyToOne
 	@JoinColumn(name="per_id", nullable=false)
 	private Persona persona;

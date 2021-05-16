@@ -20,7 +20,4 @@ import lombok.Data;
 	private String usuario;
 	private  String password;
 	
-	@OneToMany(mappedBy = "persona")
-	private Set<Cuenta> cuenta;
-	
 }
